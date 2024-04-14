@@ -1,0 +1,50 @@
+.headerDude{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    min-height:10vh;
+    padding-bottom: .25vh;
+    align-items: center;
+}
+
+.navItemContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.flashContainer{
+    margin-top:4vh;
+    margin-left:4vw;
+}
+.flashContainerImg {
+    filter: invert(74%) sepia(45%) saturate(0%) hue-rotate(145deg) brightness(101%) contrast(102%);
+}
+
+.navItem{
+    margin-top:1vh;
+    font-size:1.25vw;
+    margin-left:8vw;
+}
+
+.navLink{
+    color:var(--color-0-prim);
+}
+
+.navLinkSelected{
+    color:black;
+}
+
+.navLink:active,.navLink:hover{
+    color:black;
+}
+
+.navImg{
+    filter:invert(8%) sepia(87%) saturate(4090%) hue-rotate(312deg) brightness(111%) contrast(133%);
+}
+
+.navImgSelected{
+    filter:invert(0%) sepia(95%) saturate(3%) hue-rotate(329deg) brightness(86%) contrast(100%);
+}
+
+.navImg:active,.navImg:hover{
+    filter:invert(0%) sepia(95%) saturate(3%) hue-rotate(329deg) brightness(86%) contrast(100%);
+}

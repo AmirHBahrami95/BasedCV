@@ -1,0 +1,29 @@
+:root {
+
+    /* -------------- colors ---------------- */
+    --color-dark: #222831;
+    --color-gray: #393E46;
+    --color-grean: #00ADB5;
+    --color-gray-light: #EEEEEE;
+    --color-blue: #16489b;
+    --color-text: #EEEEEE;
+    --color-light: white;
+    --color-gray-border: rgb(224, 224, 224);
+
+    --color-winey:#800040;
+
+    --color-0-prim:var(--color-winey);
+    --color-0-scnd:var(--color-text);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
