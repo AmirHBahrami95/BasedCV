@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userSlice from './resumeSlice';
+import resumeSlice from './resumeSlice';
 
 export default configureStore({
-  reducer: {user:userSlice}
+  reducer: {resume:resumeSlice}
 });

@@ -1,0 +1,13 @@
+.main_container{
+    padding:2vw;
+    padding-top:.1vh;
+}
+
+.main{
+    max-width:95%;
+    font-size:1.25vw;
+}
+
+.main *{
+    font-size:inherit !important;
+}

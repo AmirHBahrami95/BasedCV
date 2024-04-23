@@ -1,0 +1,32 @@
+/*
+--color-0-prim:var(--color-winey);
+--color-0-scnd:var(--color-text);
+*/
+
+.form_container{
+    margin-top:2vh;
+    min-width:30vw;
+    max-width:80vw;
+    min-height:20vh;
+    margin-left:5vw;
+
+    border: .25vw solid var(--color-0-prim);
+    padding:2vw;
+    border-radius: .75vw;
+    margin-bottom: 2vh;
+}
+          
+.form_container button{
+    background-color:var(--color-0-prim);
+    color:var(--color-text);
+    font-size:2vw !important;
+    width:12vw;
+    margin-left:40%;
+}
+
+.form_container button:active,.form_container button:hover{
+    background-color:var(--color-0-text);
+    color:var(--color-0-prim);
+}
+
+

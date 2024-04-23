@@ -27,3 +27,21 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+/* override react-bootstrap */
+.btn-primary{
+    background-color:var(--color-0-prim);
+    color:var(--color-text);
+    width:8vw;
+    margin:auto;
+    position:relative;
+    margin-top:5vh;
+    margin-left:40%;
+    border:.1px solid var(--color-0-prim);
+}
+
+.btn-primary:active,.btn-primary:hover{
+    background-color:var(--color-0-text) !important;
+    color:var(--color-0-prim) !important;
+    border:.1px solid var(--color-0-prim);
+}

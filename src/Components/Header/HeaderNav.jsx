@@ -7,13 +7,7 @@ import Image from 'react-bootstrap/Image';
 
 import styles from './styles.module.css';
 
-const routes=[
-    {to:'/',title:'Start',img:'personal-information-icon'},
-    {to:'/education',title:'Education',img:'graduation-cap-icon'},
-    {to:'/work',title:'Work',img:'briefcase-icon'},
-    {to:'/projects',title:'Projects',img:'web-code-icon'},
-    {to:'/preview',title:'Preview',img:'service-provider-icon'}
-];
+import routes from "../../features/routes";
 
 export default function({}){
     let loc=useLocation();
@@ -21,7 +15,7 @@ export default function({}){
     return (
         <Nav fill variant="pills" as="ul">
             {routes.map((r,i)=>
-                <div className={styles.navItemContainer}>
+                <div key={r.to} className={styles.navItemContainer}>
                     <Nav.Item className={styles.navItem} key={r.to} as="li">
                         <Nav.Link 
                             className={r.to==loc.pathname?styles.navLinkSelected:styles.navLink} 
@@ -29,9 +23,9 @@ export default function({}){
                         >
                             <Image
                                 className={r.to==loc.pathname?styles.navImgSelected:styles.navImg}
-                                src={`/public/icons/${r.img}.svg`} 
+                                src={`/public/icons/${r.headerImg}.svg`} 
                                 style={{width:'4w',height:'4vh'}}
-                                />
+                            />
                             <p>
                                 {r.title}
                             </p>
